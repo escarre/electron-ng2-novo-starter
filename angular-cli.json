@@ -18,8 +18,14 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "../node_modules/hint.css/src",
+          "../node_modules/novo-elements"
+        ]
+      },
       "scripts": [],
       "environments": {
         "source": "environments/environment.ts",
@@ -49,7 +55,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false,
     "inline": {
       "style": false,
