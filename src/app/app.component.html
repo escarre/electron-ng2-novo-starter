@@ -1,4 +1,6 @@
-<h1>
-  {{title}}
-</h1>
-<button theme="primary">Test Button</button>
+<header><h1>{{title}}</h1></header>
+<div class="buttons">
+  <button theme="primary" (click)="notify()">Notify</button>
+  <button theme="primary" color="success" (click)="openCamera()">Open Camera</button>
+</div>
+<video id="camera" autoplay> </video>
